@@ -1,12 +1,8 @@
 {
-  "rewrites": [{
-    "source": "/(.*)",
-    "destination": "https://dcpqyzdeqgounzlrweao.supabase.co/functions/v1/serve-quiz"
-  }],
-  "headers": [{
-    "source": "/(.*)",
-    "headers": [
-      { "key": "X-Forwarded-Host", "value": "$host" }
-    ]
-  }]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ]
 }
